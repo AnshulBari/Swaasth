@@ -1,6 +1,7 @@
 {
-  "name": "carepulse",
+  "name": "swaasth",
   "version": "0.1.0",
+
   "private": true,
   "scripts": {
     "dev": "next dev",
