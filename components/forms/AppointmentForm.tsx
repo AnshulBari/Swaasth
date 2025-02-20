@@ -106,7 +106,7 @@ export const AppointmentForm = ({
         const updatedAppointment = await updateAppointment(appointmentToUpdate);
 
         if (updatedAppointment) {
-          setOpen && setOpen(false);
+          setOpen && setOpen(false); 
           form.reset();
         }
       }
@@ -133,9 +133,9 @@ export const AppointmentForm = ({
       <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-6">
         {type === "create" && (
           <section className="mb-12 space-y-4">
-            <h1 className="header">New Appointment</h1>
+            <h1 className="header">Schedule Appointment</h1>
             <p className="text-dark-700">
-              Request a new appointment in 10 seconds.
+              Request a new appointment within seconds.
             </p>
           </section>
         )}
@@ -169,7 +169,7 @@ export const AppointmentForm = ({
               fieldType={FormFieldType.DATE_PICKER}
               control={form.control}
               name="schedule"
-              label="Expected appointment date"
+              label="Tentative appointment date"
               showTimeSelect
               dateFormat="MM/dd/yyyy  -  h:mm aa"
             />

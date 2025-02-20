@@ -67,11 +67,13 @@ export const registerPatient = async ({
         identificationDocument &&
         InputFile.fromBlob(
           identificationDocument?.get("blobFile") as Blob,
-          identificationDocument?.get("fileName") as string
+          identificationDocument?.get("fileName") as string,
         );
 
       file = await storage.createFile(BUCKET_ID!, ID.unique(), inputFile);
     }
+
+   
 
     // Create new patient document -> https://appwrite.io/docs/references/cloud/server-nodejs/databases#createDocument
     const newPatient = await databases.createDocument(

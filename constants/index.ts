@@ -1,4 +1,5 @@
-export const GenderOptions = ["Male", "Female", "Other"];
+export const GenderOptions = ["male", "female", "other"];
+
 
 export const PatientFormDefaultValues = {
   firstName: "",
@@ -6,7 +7,8 @@ export const PatientFormDefaultValues = {
   email: "",
   phone: "",
   birthDate: new Date(Date.now()),
-  gender: "Male" as Gender,
+  gender: "male" as Gender,
+
   address: "",
   occupation: "",
   emergencyContactName: "",
@@ -28,12 +30,12 @@ export const PatientFormDefaultValues = {
 
 export const IdentificationTypes = [
   "Birth Certificate",
-  "Driver's License",
+  "Driving License",
   "Medical Insurance Card/Policy",
-  "Military ID Card",
+  "PAN Card",
   "National Identity Card",
   "Passport",
-  "Resident Alien Card (Green Card)",
+  "AADHAR Card",
   "Social Security Card",
   "State ID Card",
   "Student ID Card",
@@ -43,35 +45,35 @@ export const IdentificationTypes = [
 export const Doctors = [
   {
     image: "/assets/images/dr-green.png",
-    name: "John Green",
+    name: "Anshul Bari",
   },
   {
     image: "/assets/images/dr-cameron.png",
-    name: "Leila Cameron",
+    name: "Sakshi Sharma",
   },
   {
     image: "/assets/images/dr-livingston.png",
-    name: "David Livingston",
+    name: "Kushagra Verma",
   },
   {
     image: "/assets/images/dr-peter.png",
-    name: "Evan Peter",
+    name: "Yuvraj Mishra",
   },
   {
     image: "/assets/images/dr-powell.png",
-    name: "Jane Powell",
+    name: "Tanu Singh",
   },
   {
     image: "/assets/images/dr-remirez.png",
-    name: "Alex Ramirez",
+    name: "Aditya Singh",
   },
   {
     image: "/assets/images/dr-lee.png",
-    name: "Jasmine Lee",
+    name: "Vidhan Gupta",
   },
   {
     image: "/assets/images/dr-cruz.png",
-    name: "Alyana Cruz",
+    name: "Shraddha Shukla",
   },
   {
     image: "/assets/images/dr-sharma.png",

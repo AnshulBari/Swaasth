@@ -104,8 +104,8 @@ const RegisterForm = ({ user }: { user: User }) => {
         className="flex-1 space-y-12"
       >
         <section className="space-y-4">
-          <h1 className="header">Welcome 👋</h1>
-          <p className="text-dark-700">Let us know more about yourself.</p>
+          <h1 className="header">Welcome</h1>
+          <p className="text-dark-700">Kindly provide us your details.</p>
         </section>
 
         <section className="space-y-6">
@@ -213,7 +213,7 @@ const RegisterForm = ({ user }: { user: User }) => {
               fieldType={FormFieldType.PHONE_INPUT}
               control={form.control}
               name="emergencyContactNumber"
-              label="Emergency contact number"
+              label="Emergency Contact Number"
               placeholder="(555) 123-4567"
             />
           </div>
@@ -370,7 +370,7 @@ const RegisterForm = ({ user }: { user: User }) => {
             fieldType={FormFieldType.CHECKBOX}
             control={form.control}
             name="privacyConsent"
-            label="I acknowledge that I have reviewed and agree to the
+            label="I acknowledge that I have reviewed and agreed to the
             privacy policy"
           />
         </section>
