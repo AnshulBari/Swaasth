@@ -41,7 +41,7 @@ const RequestSuccess = async ({
             Your <span className="text-green-500">appointment request</span> has
             been successfully submitted!
           </h2>
-          <p>We&apos;ll be in touch shortly to confirm.</p>
+          <p>We&apos;ll be in touch with you shortly to confirm.</p>
         </section>
 
         <section className="request-details">
@@ -73,7 +73,7 @@ const RequestSuccess = async ({
           </Link>
         </Button>
 
-        <p className="copyright">© 2024 CarePluse</p>
+        <p className="copyright">© 2025 Swaasth</p>
       </div>
     </div>
   );

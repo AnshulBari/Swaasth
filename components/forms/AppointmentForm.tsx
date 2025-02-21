@@ -64,7 +64,8 @@ export const AppointmentForm = ({
         status = "scheduled";
         break;
       case "cancel":
-        status = "cancelled";
+        status = "canceled";
+
         break;
       default:
         status = "pending";
@@ -94,6 +95,7 @@ export const AppointmentForm = ({
         const appointmentToUpdate = {
           userId,
           appointmentId: appointment?.$id!,
+          timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
           appointment: {
             primaryPhysician: values.primaryPhysician,
             schedule: new Date(values.schedule),
@@ -102,6 +104,7 @@ export const AppointmentForm = ({
           },
           type,
         };
+
 
         const updatedAppointment = await updateAppointment(appointmentToUpdate);
 
