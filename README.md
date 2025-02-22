@@ -32,10 +32,6 @@ A healthcare patient management application that enables patients to seamlessly 
 - ✅ **Performance Tracking Using Sentry** - Monitors and tracks application performance, ensuring a smooth user experience.
 - ✅ **Well-Structured Codebase** - Follows clean architecture principles for easy maintenance and reusability.
 
-## 📸 Screenshots
-
-(Include relevant screenshots showcasing different features of the application.)
-
 ## 📌 Installation and Setup
 
 1. Clone the repository:
